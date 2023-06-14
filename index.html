@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Etch A Sketch</h1>
+  <div class="header">
+    <h6>Select the size</h6>
+    <button id="popup" class="btn btn-danger">Select</button>
+  </div>
+  <p id="message"></p>
+  <p id="draw"></p>
+  <div class="board"></div>
+  <div class="footer">
+    <button class="btn btn-dark" onclick="setColor('black')">Black</button>
+    <button class="btn btn-warning" onclick="setColor('random')">Random</button>
+    <button class="btn btn-primary" onclick="resetBoard()">Reset</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
